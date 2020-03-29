@@ -16,6 +16,13 @@ const movies = {
     likes: 0,
     banner:
       "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg"
+  },
+
+  srimanthudu: {
+    name: "srimanthudu",
+    likes: 0,
+    banner:
+      "https://i.pinimg.com/originals/a1/21/88/a121881009b3add0ede50bc05ea8fe06.jpg"
   }
 };
 export default movies;
