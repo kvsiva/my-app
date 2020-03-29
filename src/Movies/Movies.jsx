@@ -22,27 +22,17 @@ class Movies extends React.Component {
         "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg"
     }
   };
-  getMovie = (name, likes, banner) => {
-    return <Movie name={name} likes={likes} banner={banner} />;
+  getMovie = movie => {
+    return (
+      <Movie name={movie.name} likes={movie.likes} banner={movie.banner} />
+    );
   };
   render() {
     return (
       <div className="movies-section">
-        {this.getMovie(
-          this.state.Sarainodu.name,
-          this.state.Sarainodu.likes,
-          this.state.Sarainodu.banner
-        )}
-        {this.getMovie(
-          this.state.Maharshi.name,
-          this.state.Maharshi.likes,
-          this.state.Maharshi.banner
-        )}
-        {this.getMovie(
-          this.state.Avengers.name,
-          this.state.Avengers.likes,
-          this.state.Avengers.banner
-        )}
+        {this.getMovie(this.state.Sarainodu)}
+        {this.getMovie(this.state.Maharshi)}
+        {this.getMovie(this.state.Avengers)}
       </div>
     );
   }
