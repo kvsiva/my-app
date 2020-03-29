@@ -8,14 +8,37 @@ import Movies from "./Movies/Movies";
 import Calculator from "./Calculator/Calculator";
 import LifeCycleDemo from "./LifeCycleDemo/LifeCycleDemo";
 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 function App() {
   return (
-    <div className="containter">
-      {/*<Calculator />*/}
-      <Movies />
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/">Calculator</Link>
+          </li>
+          <li>
+            <Link to="/movies">Movies</Link>
+          </li>
+          <li>
+            <Link to="/lifecycledemo">Life Cycle Demo</Link>
+          </li>
+        </ul>
 
-      {/*<LifeCycleDemo a={10}/> */}
-    </div>
+        <Switch>
+          <Route path="/movies">
+            <Movies />
+          </Route>
+          <Route path="/lifecycledemo">
+            <LifeCycleDemo />
+          </Route>
+          <Route path="/">
+            <Calculator />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
