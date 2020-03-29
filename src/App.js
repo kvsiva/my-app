@@ -12,10 +12,9 @@ function App() {
   return (
     <div className="containter">
       {/*<Calculator />*/}
-      {/*{
-      <Movies />}
-      */}
-      <LifeCycleDemo />
+      <Movies />
+
+      {/*<LifeCycleDemo a={10}/> */}
     </div>
   );
 }
