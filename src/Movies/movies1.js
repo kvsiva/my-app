@@ -1,4 +1,4 @@
-const movies = {
+const movies1 = {
   sarainodu: {
     name: "Sarainodu",
     likes: 0,
@@ -25,4 +25,4 @@ const movies = {
       "https://i.pinimg.com/originals/a1/21/88/a121881009b3add0ede50bc05ea8fe06.jpg"
   }
 };
-export default movies;
+export default movies1;

@@ -1,9 +1,9 @@
 import React from "react";
 import Movie from "../movie/Movie";
 import "./styles.css";
-import movies from "./movies";
+import movies1 from "./movies1";
 class Movies extends React.Component {
-  state = { ...movies };
+  state = { ...movies1 };
   getMovie = movie => {
     return (
       <Movie name={movie.name} likes={movie.likes} banner={movie.banner} />
