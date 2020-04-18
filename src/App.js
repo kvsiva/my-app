@@ -12,6 +12,7 @@ function App() {
   return (
     <Router>
       <CustomeRouter />
+      <InstructorApp />
     </Router>
   );
 }
